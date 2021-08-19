@@ -1,0 +1,199 @@
+/* !top | right | bottom | left */
+body{
+  font-family: "Montserrat";
+  text-align: center;
+}
+
+
+/* !Headings */
+
+.large-heading {
+  line-height: 1.5;
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 3.5rem;
+}
+
+.section-heading {
+  font-family: "Montserrat";
+  font-size: 3rem;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+/* !Containers */
+.container-fluid {
+  padding: 7% 15%; /** 7% top and bottom 15% left and right**/
+}
+
+/* !Sections */
+
+.colored-section {
+  background-color: #082032;
+  color: #fff;
+}
+
+.white-section {
+  background-color: #fff;
+}
+
+/* !Navigation Bar */
+
+.navbar {
+  padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+  font-size: 2.5rem;
+  font-family: "Montserrat";
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat";
+}
+
+.profile-me {
+  border-radius: 100%;
+}
+
+/* !Donwload Buttons */
+/* !top | right | left | bottom */
+
+.download-button {
+  margin: 5% 3% 5% 0;
+}
+
+/* !Title Sections */
+
+#title .container-fluid {
+  padding: 3% 15% 7%; /** top - lef/rig - bottom**/
+  text-align: left;
+}
+
+/* !Title Image */
+
+.me-img {
+  width: 90%;
+  transform: rotate(8deg); /* Equal to rotateZ(45deg) */
+  position: absolute;
+  right: 10%;
+}
+
+/* !Features Sections */
+
+#features {
+  position: relative;
+}
+
+.feature-title {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.features-box{
+  padding: 2.5%;
+}
+
+.features-icon {
+  color: #2fac7c;
+  margin-bottom: 1rem;
+}
+
+.features-icon:hover {
+  color: #3842d3;
+}
+
+.features-font-italic {
+  color: #8f8f8f;
+  font-size: 1rem;
+}
+
+/* !Testimonial Sections */
+
+#testimonials {
+  background-color: #476072;
+}
+
+.testimonial-image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+.testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+
+#press {
+  background-color: #476072;
+  padding-bottom: 3%;
+}
+
+.press-img {
+  width: 10%;
+  margin: 20px 20px 50px; /* top / left-right / bottom */
+}
+
+.web-dev-tools {
+  width: 9%;
+  margin: 20px 20px 50px; /* top / left-right / bottom */
+}
+/* !Pricing Section */
+
+#pricing {
+  padding: 100px;
+}
+
+.pricing-column {
+  padding: 3% 2%; /**3% top and bottom and 2% left and right**/
+}
+
+.price-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+/* !CTA */
+
+#cta {
+  padding: 10%;
+}
+
+/* !Footer */
+
+#footer {
+  background-color: #fff;
+  padding: 5%;
+}
+
+.footer-icon {
+  padding: 2% 1%;
+}
+
+.footer-p{
+  font-family: 'Montserrat';
+}
+
+/* TODO @media <type><features>**/
+/* TODO if the viewport is 1028px it will change the iphone-img position to static and 
+rotate to 0 and the div id title-align will change to center how to check viewport try to inspect look at upper rigth**/
+@media (max-width: 1028px) {
+
+  #title {
+    text-align: center;
+  }
+
+  .me-img {
+    position: static;
+    transform: rotate(0);
+  }
+
+}

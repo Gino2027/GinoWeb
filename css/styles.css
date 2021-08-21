@@ -222,6 +222,7 @@ body{
 
 .footer-icon {
   padding: 2% 1%;
+  text-decoration: none !important;
 }
 
 .footer-p{

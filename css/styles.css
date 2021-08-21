@@ -1,6 +1,11 @@
+/**CSS Anatomy: Selector{properties: values;}**/
+/**8-21-21**/
+
+@import url(https://fonts.googleapis.com/css?family=Bangers);
+
 /* !top | right | bottom | left */
 body{
-  font-family: "Montserrat";
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
 }
 
@@ -8,14 +13,13 @@ body{
 /* !Headings */
 
 .large-heading {
+  font-family: 'Bangers', sans-serif;
+  font-size: 4.5rem;
   line-height: 1.5;
-  font-family: "Montserrat";
-  font-weight: bold;
-  font-size: 3.5rem;
 }
 
 .section-heading {
-  font-family: "Montserrat";
+  font-family: 'Bangers', sans-serif;
   font-size: 3rem;
   line-height: 1.5;
   font-weight: bold;
@@ -44,9 +48,8 @@ body{
 }
 
 .navbar-brand {
-  font-size: 2.5rem;
-  font-family: "Montserrat";
-  font-weight: bold;
+  font-size: 3.5rem;
+  font-family: 'Bangers', sans-serif;
 }
 
 .nav-item {
@@ -54,8 +57,8 @@ body{
 }
 
 .nav-link {
-  font-size: 1.2rem;
-  font-family: "Montserrat";
+  font-size: 1.8rem;
+  font-family: 'Bangers', sans-serif;
 }
 
 .profile-me {
@@ -79,10 +82,16 @@ body{
 /* !Title Image */
 
 .me-img {
-  width: 90%;
+  width: 120%;
   transform: rotate(8deg); /* Equal to rotateZ(45deg) */
   position: absolute;
-  right: 10%;
+  right: 9%;
+}
+
+.enemy-img {
+  width: 30%;
+  position: absolute;
+  right: 9%;
 }
 
 /* !Features Sections */
@@ -92,8 +101,9 @@ body{
 }
 
 .feature-title {
-  font-weight: 600;
-  font-size: 1.5rem;
+  font-weight: 300;
+  font-family: 'Bangers', sans-serif;
+  font-size: 2rem;
 }
 
 .features-box{
@@ -145,6 +155,16 @@ body{
   width: 6%;
   margin: 20px 20px 50px; /* top / left-right / bottom */
 }
+
+.program-language {
+    font-family: 'Bangers';
+    font-size: 2.5rem;
+}
+
+.webdev-tools {
+  font-family: 'Bangers';
+  font-size: 2.5rem;
+}
 /* !Pricing Section */
 
 #pricing {
@@ -166,6 +186,16 @@ body{
   padding: 10%;
 }
 
+.image-iso {
+  animation-name: skill-ghost;
+  animation-timing-function: ease;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  width: 40%;
+  margin: 0 auto 0 auto;
+  position: relative;
+}
+
 /* !Footer */
 
 #footer {
@@ -181,6 +211,31 @@ body{
   font-family: 'Montserrat';
 }
 
+.fa-deviantart {
+  color: #00917c;
+}
+  
+.fa-linkedin {
+  color: #007bb5;
+}
+  
+.fa-google {
+   color: #dd4b39;
+}
+
+
+.image-iso {
+  animation-name: image-iso ;
+  animation-timing-function: ease;
+}
+
+@keyframes image-iso {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-20px); } /**Bounce effect**/
+  100% { transform: translateY(0); }
+}
+
+
 /* TODO @media <type><features>**/
 /* TODO if the viewport is 1028px it will change the iphone-img position to static and 
 rotate to 0 and the div id title-align will change to center how to check viewport try to inspect look at upper rigth**/
@@ -195,4 +250,11 @@ rotate to 0 and the div id title-align will change to center how to check viewpo
     transform: rotate(0);
   }
 
+  .enemy-img {
+    position: static;
+    transform: rotate(0);
+  }
+
 }
+
+

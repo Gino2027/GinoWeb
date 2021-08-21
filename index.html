@@ -53,6 +53,28 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+    
+    <!--Disabled View Source code-->
+    <script language="JavaScript">
+      <!-- http://www.spacegun.co.uk -->
+
+      var message = "function disabled";
+
+      function rtclickcheck(keyp) {
+        if (navigator.appName == "Netscape" && keyp.which == 3) {
+          alert(message);
+          return false;
+        }
+
+        if (navigator.appVersion.indexOf("MSIE") != -1 && event.button == 2) {
+          alert(message);
+          return false;
+        }
+      }
+
+      document.onmousedown = rtclickcheck;
+    </script>
+    
   </head>
 
   <body>

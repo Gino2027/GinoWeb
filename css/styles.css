@@ -177,14 +177,25 @@ body{
 }
 
 .price-text {
-  font-size: 3rem;
+  font-size: 2rem;
   line-height: 1.5;
 }
 
+.product1 {
+ width: 80%;
+}
+
+.product2 {
+ width: 80%;
+}
+
+.product3{
+  width: 80%;;
+}
 /* !CTA */
 
 #cta {
-  padding: 10%;
+  padding: 5%;
 }
 
 .image-iso {

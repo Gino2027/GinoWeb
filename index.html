@@ -3,13 +3,15 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Gino JB</title>
+  <title>Gino JB v1</title>
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@600&family=Montserrat:wght@100;400;600;900&family=Open+Sans&family=Roboto+Slab&display=swap"
     rel="stylesheet">
+  <!--Font Awesome 4.7-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -30,7 +32,8 @@
 </head>
 
 <body>
-  
+  <!--HTML Anatomy: <elements ="attributes"-->
+
   <section class="colored-section" id="title">
     <!--Responsive Container-fluid size of the viewport-->
     <div class="container-fluid">
@@ -61,17 +64,21 @@
       <!--Column = 12 col = col-12 -->
       <!--Col-lg: Desktop view / Col-md: Tablet view / Col-sm: Phone view-->
       <div class="row">
-        <div class="col-lg-6">
+        <div class="col-lg-4">
           <h1 class="large-heading">Hi! Welcome to my Website.</h1>
           <!--<button type="button" class="btn btn-dark btn-lg download-button"><i class="fab fa-apple"></i>
             Download</button>
           <button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fab fa-google-play"></i>
             Download</button>-->
         </div>
-        <div class="col-lg-6">
-          <img class="me-img" src="images/megino.png" alt="iphone-mockup">
+        <div class="col-lg-4">
+          <img class="enemy-img" src="images/ghost1.png" alt="ghost-char">
+        </div>
+        <div class="col-lg-4">
+          <img class="me-img" src="images/megino.png" alt="me-char">
         </div>
       </div>
+      
     </div>
 
   </section>
@@ -148,11 +155,11 @@
     <!-- End Carousel -->
 
   <!-- Press -->
-    <h3>Programming Language.</h3>
+    <h3 class="program-language">Programming Language.</h3>
     <img class="press-img" src="images/html5.png" alt="html5-logo">
     <img class="press-img" src="images/css3.png" alt="css3-logo">
     <img class="press-img" src="images/js.png" alt="fnyw-logo">
-    <h3>Web Development and Designing Tools.</h3>
+    <h3 class="webdev-tools">Web Development and Designing Tools.</h3>
     <img class="web-dev-tools" src="images/vs.png" alt="vs-logo">
     <img class="web-dev-tools" src="images/aips.png" alt="aips-logo">
     <img class="web-dev-tools" src="images/bootstrap.png" alt="bootstrap-logo">
@@ -229,7 +236,7 @@
   <!-- Call to Action -->
 
   <section class="colored-section" id="cta">
-
+  <img class="image-iso" src="images/isome.png" alt="">
     <h3 class="large-heading">This Website, there's a lot of things i need to put here, but focus in simplicity.</h3>
     <!--<button type="button" class="btn btn-dark btn-lg download-button"><i class="fab fa-apple"></i> Download</button>
     <button type="button" class="btn btn-light btn-lg download-button"><i class="fab fa-google-play"></i>
@@ -241,10 +248,9 @@
   <!-- Footer -->
 
   <footer class="white-section" id="footer">
-    <i class="fab fa-twitter footer-icon"></i>
-    <i class="fab fa-facebook-f footer-icon"></i>
-    <i class="fab fa-instagram footer-icon"></i>
-    <i class="fas fa-envelope footer-icon"></i>
+    <a class="fab fa fa-deviantart fa-lg footer-icon" title="DeviantArt" href="https://www.deviantart.com/bautistagino" target="_blank"></a>
+    <a class="fab fa fa-google fa-lg footer-icon" title="GoogleMail" href="mailto:ginobautista023@gmail.com"></a>
+    <a class="fas fa fa-linkedin fa-lg footer-icon" title="LinkedIn" href="https://www.linkedin.com/" target="_blank"></a>
     <p class="footer-p">© Copyright 2021 Gino</p>
 
   </footer>

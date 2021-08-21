@@ -14,8 +14,13 @@ body{
 
 .large-heading {
   font-family: 'Bangers', sans-serif;
-  font-size: 4rem;
+  font-size: 5rem;
   line-height: 1.5;
+}
+
+.message-heading {
+  font-family: 'Bangers', sans-serif;
+  font-size: 3rem;
 }
 
 .section-heading {

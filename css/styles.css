@@ -9,11 +9,12 @@ body{
   text-align: center;
 }
 
+
 /* !Headings */
 
 .large-heading {
   font-family: 'Bangers', sans-serif;
-  font-size: 4.5rem;
+  font-size: 4rem;
   line-height: 1.5;
 }
 
@@ -120,7 +121,7 @@ body{
 
 .features-font-italic {
   color: #8f8f8f;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 /* !Testimonial Sections */

@@ -133,17 +133,16 @@ body{
 
 
 #press {
-  /*background-color: #476072;*/
   padding-bottom: 3%;
 }
 
 .press-img {
-  width: 10%;
-  margin: 20px 20px 50px; /* top / left-right / bottom */
+  width: 9%;
+  margin: 10px 20px 30px; /* top / left-right / bottom */
 }
 
 .web-dev-tools {
-  width: 9%;
+  width: 6%;
   margin: 20px 20px 50px; /* top / left-right / bottom */
 }
 /* !Pricing Section */

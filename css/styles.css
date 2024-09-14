@@ -9,8 +9,11 @@ body{
   text-align: center;
 }
 
-
 /* !Headings */
+
+.row {
+  margin: 0 0 0 0;
+}
 
 .large-heading {
   font-family: 'Bangers', sans-serif;
@@ -20,27 +23,47 @@ body{
 
 .message-heading {
   font-family: 'Bangers', sans-serif;
-  font-size: 3rem;
+  font-size: 10rem;
 }
 
 .section-heading {
   font-family: 'Bangers', sans-serif;
   font-size: 3rem;
   line-height: 1.5;
-  font-weight: bold;
+  padding: 10px;
+}
+
+.section-heading-shop {
+  font-family: 'Bangers', sans-serif;
+  font-size: 3rem;
+  line-height: 1.5;
+  padding: 30px;
 }
 
 /* !Containers */
 .container-fluid {
-  padding: 7% 15%; /** 7% top and bottom 15% left and right**/
+  /** padding: 7% 15%; 7% top and bottom 15% left and right**/
 }
 
+.about-me {
+  padding: 5% 10%;
+}
 /* !Sections */
+
+.first_section {
+  /* background-image: url('../../images/bgwebko.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center; */
+  background-color: #fdc500;
+  color: #fff;
+}
 
 .colored-section {
   background-color: #082032;
   color: #fff;
 }
+
 
 .white-section {
   background-color: #fff;
@@ -64,11 +87,21 @@ body{
 .nav-link {
   font-size: 1.8rem;
   font-family: 'Bangers', sans-serif;
+  color:#ffffff;
 }
 
 .profile-me {
   border-radius: 100%;
 }
+
+.navbar-toggler {
+  font-size: 2rem;
+  border-color: #ffffff;
+  border-radius: 10px;
+  border-width: 2.5px;
+}
+
+
 
 /* !Donwload Buttons */
 /* !top | right | left | bottom */
@@ -84,10 +117,16 @@ body{
   text-align: left;
 }
 
+/* !Introduction */
+
+.info_title {
+  font-size: 1rem;
+}
+
 /* !Title Image */
 
 .me-img {
-  width: 120%;
+  width: 90%;
   transform: rotate(8deg); /* Equal to rotateZ(45deg) */
   position: absolute;
   right: 9%;
@@ -133,13 +172,11 @@ body{
 /* !Testimonial Sections */
 
 #testimonials {
-  background-color: #546d80;
+  background-color: #000000;
 }
 
 .testimonial-image {
-  width: 10%;
-  border-radius: 100%;
-  margin: 20px;
+  width: 50%;
 }
 
 .testimonial-text {
@@ -171,14 +208,18 @@ body{
   font-family: 'Bangers';
   font-size: 2.5rem;
 }
-/* !Pricing Section */
+/* !Work */
 
-#pricing {
-  padding: 100px;
+#work {
+  padding: 20px 10px 40px 10px;
+}
+
+.brand_name {
+  color: #000000;
 }
 
 .pricing-column {
-  padding: 3% 2%; /**3% top and bottom and 2% left and right**/
+  padding: 3% 5%; /**3% top and bottom and 2% left and right**/
 }
 
 .price-text {
@@ -197,6 +238,31 @@ body{
 .product3{
   width: 80%;;
 }
+
+.insta1 img {
+  border: none;
+  max-width:90%;
+  display: block;
+  transition: transform .2s ease-in-out;
+}
+
+.insta img {
+  border: none;
+  max-width: 100%;
+  display: block;
+  transition: transform .2s ease-in-out;
+}
+
+.insta a {
+  overflow: hidden;
+  display: inline-block;
+}
+
+/*effect hover*/
+.insta:hover img {
+  transform: scale(1.15);
+}
+
 /* !CTA */
 
 #cta {
@@ -208,6 +274,7 @@ body{
   animation-timing-function: ease;
   animation-duration: 2s;
   animation-iteration-count: infinite;
+  transition: transform .2s;
   width: 40%;
   margin: 0 auto 0 auto;
   position: relative;
@@ -217,12 +284,11 @@ body{
 
 #footer {
   background-color: #fff;
-  padding: 5%;
 }
 
 .footer-icon {
   padding: 2% 1%;
-  text-decoration: none !important;
+  text-decoration:none !important;
 }
 
 .footer-p{
@@ -242,7 +308,8 @@ body{
    color: #dd4b39;
 }
 
-/**8/22/21**/
+
+
 .product1:hover {
   -ms-transform: scale(1.5); /* IE 9 */
   -webkit-transform: scale(1.5); /* Safari 3-8 */
@@ -276,8 +343,8 @@ body{
 }
 
 
-/* TODO @media <type><features>**/
-/* TODO if the viewport is 1028px it will change the iphone-img position to static and 
+/** TODO @media is for responsive <type><features>**/
+/*8 TODO if the viewport is 1028px it will change the iphone-img position to static and 
 rotate to 0 and the div id title-align will change to center how to check viewport try to inspect look at upper rigth**/
 @media (max-width: 1028px) {
 
@@ -285,7 +352,26 @@ rotate to 0 and the div id title-align will change to center how to check viewpo
     text-align: center;
   }
 
+  .footer-icon {
+    font-size: 2rem;
+  }
+
+  .footer-p{
+    font-size: 2rem;
+  }
+
+  .features-font-italic {
+    font-size: 2rem;
+    font-weight: 500;
+  }  
+
+  .large-heading{
+    font-size: 4rem;
+    line-height: 70px;
+  }
+
   .me-img {
+    width: 140%;
     position: static;
     transform: rotate(0);
   }
@@ -295,4 +381,12 @@ rotate to 0 and the div id title-align will change to center how to check viewpo
     transform: rotate(0);
   }
 
+  .info_title {
+    font-size: 1.8rem;
+    padding-top: 13px;
+  }
+
+
 }
+
+

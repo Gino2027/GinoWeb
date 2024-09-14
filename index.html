@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Gino JB</title>
+    <title>myweb</title>
     <link rel="icon" href="images/favicon.ico" />
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -53,44 +53,22 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
-    
-    <!--Disabled View Source code-->
-    <script language="JavaScript">
-      <!-- http://www.spacegun.co.uk -->
-
-      var message = "Opss! Sorry";
-
-      function rtclickcheck(keyp) {
-        if (navigator.appName == "Netscape" && keyp.which == 3) {
-          alert(message);
-          return false;
-        }
-
-        if (navigator.appVersion.indexOf("MSIE") != -1 && event.button == 2) {
-          alert(message);
-          return false;
-        }
-      }
-
-      document.onmousedown = rtclickcheck;
-    </script>
-    
   </head>
 
   <body>
     <!--HTML Anatomy: <elements ="attributes"-->
 
-    <section class="colored-section" id="title">
+    <section class="first_section" id="title">
       <!--Responsive Container-fluid size of the viewport-->
       <div class="container-fluid">
         <!-- Nav Bar -->
 
-        <nav class="navbar navbar-expand-lg navbar-dark">
+        <nav class="navbar navbar-expand-lg">
           <a class="navbar-brand" href=""
-            ><img class="profile-me" src="images/mechar.jpg" /> Gino</a
+            ><img class="profile-me" src="images/mechar.jpg" /> </a
           >
           <button
-            class="navbar-toggler"
+            class="navbar-toggler navbar-dark"
             type="button"
             data-toggle="collapse"
             data-target="#navbarTogglerDemo01"
@@ -100,16 +78,17 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
+
           <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav ml-auto nav-">
               <li class="nav-item">
                 <a class="nav-link" href="#features">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#pricing">Shop</a>
+                <a class="nav-link" href="#shop">Shop</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#footer">Contact</a>
+                <a class="nav-link" href="#work">Works</a>
               </li>
             </ul>
           </div>
@@ -119,17 +98,18 @@
         <!--Column = 12 col = col-12 -->
         <!--Col-lg: Desktop view / Col-md: Tablet view / Col-sm: Phone view-->
         <div class="row">
-          <div class="col-lg-4">
-            <h1 class="large-heading">Hi! Welcome to my Website.</h1>
+          <div class="col-md-6">
+            <h1 class="large-heading">Welcome! CRTVEUNIQUE</h1>
+            <h2 class="info_title">Creating unique illustrator art based on the ideas that came from my imagination.</h2>
             <!--<button type="button" class="btn btn-dark btn-lg download-button"><i class="fab fa-apple"></i>
             Download</button>
           <button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fab fa-google-play"></i>
             Download</button>-->
           </div>
-          <div class="col-lg-4">
+          <!-- <div class="col-lg-4">
             <img class="enemy-img" src="images/ghost1.png" alt="ghost-char" />
-          </div>
-          <div class="col-lg-4">
+          </div> -->
+          <div class="col-md-6">
             <img class="me-img" src="images/megino.png" alt="me-char" />
           </div>
         </div>
@@ -139,17 +119,19 @@
     <!-- Features -->
 
     <section class="white-section" id="features">
-      <div class="container-fluid">
+      <div class="about-me">
         <div class="row">
-          <div class="col-lg-4 features-box">
-            <i class="fas fa-user-secret fa-4x features-icon"></i>
-            <h3 class="feature-title">IT Specialist</h3>
+          <div class="col-lg-12 features-box">
+            <!-- <h3 class="feature-title">IT Specialist</h3> -->
             <p class="features-font-italic">
-              I'm not a Hacker, just a simple IT guy.
+              Experienced IT with over 10 years of experience in Information Technology from different industry levels. Excellent reputation for resolving problems of both software and hardware issues. 
+              Enthusiastic Front-end Developer eager to contribute to team success through hard work, attention to detail and excellent organizational skills. 
+              Clear understanding of Web design and Graphic Design and training in Web Development. 
+              Pioneered IT department of a fast - paced restaurant. Motivated to learn, grow, and excel in Web Development and other IT infrastructure development.
             </p>
           </div>
 
-          <div class="col-lg-4 features-box">
+          <!-- <div class="col-lg-4 features-box">
             <i class="fas fa-pencil-alt fa-4x features-icon"></i>
             <h3 class="feature-title">Graphic illustrator</h3>
             <p class="features-font-italic">
@@ -164,18 +146,16 @@
               I can make a website that responsive in any size. Try to inspect
               me.
             </p>
-          </div>
+          </div> -->
         </div>
       </div>
     </section>
 
     <!-- Testimonials -->
 
-    <section class="colored-section" id="testimonials">
+    <section class="colored-section" id="shop">
+      <h2 class="section-heading-shop">Shop Now!</h2>
       <!-- Start Carousel -->
-      <!-- 8/3/2021: need to update the content inside the carousel. put some done graphic, web template, or hobbies-->
-      <!--Div ID: id of the carousel note: to be unique | Class: bootstrap class which is carousel slide: mean animate right to left
-| Data-ride ="false" mean it doesn't auto play-->
       <div
         id="testimonial-carousel"
         class="carousel slide"
@@ -184,149 +164,150 @@
         <div class="carousel-inner">
           <!--Carousel-inner: contain the content of the carousel items, so the slides that will changed.-->
           <div class="carousel-item active container-fluid">
-            <h2 class="testimonial-text">
-              Just a carousel effect, if you want like this.
-            </h2>
             <img
               class="testimonial-image"
-              src="images/gn.png"
-              alt="man-profile"
+              src="images/ramen_gif.gif"
+              alt=""
             />
-            <em>Gio, IT Specialist, Quezon City</em>
           </div>
-          <div class="carousel-item container-fluid">
-            <h2 class="testimonial-text">
-              I know it's a simple effect, but i know how it works.
-            </h2>
-            <img
-              class="testimonial-image"
-              src="images/pruvy.jpg"
-              alt="lady-profile"
-            />
-            <em>Claudia, Accountant, Sta Mesa City</em>
+        </div>
+      </div>
+      <!-- card-deck to column this 3 card class inside the div class="card-deck" -->
+      <div class="row">
+        <!-- <div class="card-deck"> where using row instead for the purpose of grid bootstrap -->
+        <!--col-lg-4 col-md-6 make your view col within the screen just run and check it -->
+        <div class="pricing-column col-lg-6 col-md-12">
+          <div class="card">
+            <div class="card-header">
+              <h3 class="brand_name">MY COMFORT FOOD RED LIMITED</h3>
+            </div>
+            <div class="card-body">
+              <img
+                class="product1"
+                src="images/shop2.png"
+                alt="design2"
+              />
+              <h2 class="price-text">PHP 200.00</h2>
+              <p>Limited Popsicle Design</p>
+              <a href="https://prenta.ph/products/my-comfort-food-ramen" class="btn btn-lg btn-dark btn-block" role="button" aria-pressed="true" target="_blank">
+                Shop Now!
+              </a>
+            </div>
           </div>
-          <!-- <div class="carousel-item" style="background-color: orange;">
-      </div> -->
         </div>
 
-        <!--role="button"to activate the btn features in any html element -->
-        <a
-          class="carousel-control-prev"
-          href="#testimonial-carousel"
-          role="button"
-          data-slide="prev"
-        >
-          <!--aria-hidden="true": means that when a visually impaired person comes across your website they usually have something
-    called a screen reader which goes through website and reads what is on there-->
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <!--Class="sr-only" means stands for screen reader only -->
-          <span class="sr-only">Previous</span>
-        </a>
-        <a
-          class="carousel-control-next"
-          href="#testimonial-carousel"
-          role="button"
-          data-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
+        <div class="pricing-column col-lg-6 col-md-12">
+          <!--col-lg-4 col-md-6 make your view col within the screen just run and check it -->
+          <div class="card">
+            <div class="card-header">
+              <h3 class="brand_name">MY COMFORT FOOD BLUE LIMITED</h3>
+            </div>
+            <div class="card-body">
+              <img
+                class="product2"
+                src="images/shop3.png"
+                alt="design2"
+              />
+              <h2 class="price-text">PHP 200.00</h2>
+              <p>Limited Lightsaber Design</p>
+              <a href="https://prenta.ph/products/my-comfort-food-ramen-blue" class="btn btn-lg btn-dark btn-block" role="button" aria-pressed="true" target="_blank">
+                Shop Now!
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
-      <!-- End Carousel -->
-
-      <!-- Press -->
-      <h3 class="program-language">Programming Language.</h3>
-      <img class="press-img" src="images/html5.png" alt="html5-logo" />
-      <img class="press-img" src="images/css3.png" alt="css3-logo" />
-      <img class="press-img" src="images/js.png" alt="fnyw-logo" />
-      <h3 class="webdev-tools">Web Development and Designing Tools.</h3>
-      <img class="web-dev-tools" src="images/vs.png" alt="vs-logo" />
-      <img class="web-dev-tools" src="images/aips.png" alt="aips-logo" />
-      <img
-        class="web-dev-tools"
-        src="images/bootstrap.png"
-        alt="bootstrap-logo"
-      />
-      <img class="web-dev-tools" src="images/laravel.png" alt="laravel-logo" />
-      <img class="web-dev-tools" src="images/xampp.png" alt="xampp-logo" />
-      <img
-        class="web-dev-tools"
-        src="images/chromedevtools.png"
-        alt="chromedevtools-logo"
-      />
     </section>
 
     <!-- Pricing -->
 
-    <section class="white-section" id="pricing">
-      <h2 class="section-heading">Shop Now!</h2>
+    <section class="white-section" id="work">
+      <h1 class="section-heading">WORKS</h1>
       <!--<p>Simple and affordable price plans bluh bluh.</p>-->
 
       <!-- card-deck to column this 3 card class inside the div class="card-deck" -->
       <div class="row">
         <!-- <div class="card-deck"> where using row instead for the purpose of grid bootstrap -->
         <!--col-lg-4 col-md-6 make your view col within the screen just run and check it -->
-        <div class="pricing-column col-lg-4 col-md-6">
-          <div class="card">
-            <div class="card-header">
-              <h3>Limited Design</h3>
-            </div>
-            <div class="card-body">
-              <img
-                class="product1"
-                src="images/PopsicleShirt.png"
-                alt="design2"
-              />
-              <h2 class="price-text">PHP 200.00</h2>
-              <p>Limited Popsicle Design</p>
-              <a href="mailto:ginobautista023@gmail.com" class="btn btn-lg btn-dark btn-block" role="button" aria-pressed="true">
-                Contact Us!
-              </a>
-            </div>
-          </div>
+        <div class="col-lg-3 col-md-6 insta">
+          <a href="" target="_blank">
+            <img
+              class=""
+              src="images/webmain_carouselp1.jpg"
+              alt="Sample Product ads"
+            /></img>
+          </a>
         </div>
 
-        <div class="pricing-column col-lg-4 col-md-6">
-          <!--col-lg-4 col-md-6 make your view col within the screen just run and check it -->
-          <div class="card">
-            <div class="card-header">
-              <h3>Limited Design</h3>
-            </div>
-            <div class="card-body">
-              <img
-                class="product2"
-                src="images/designhuman3.png"
-                alt="design2"
-              />
-              <h2 class="price-text">PHP 200.00</h2>
-              <p>Limited Lightsaber Design</p>
-              <a href="mailto:ginobautista023@gmail.com" class="btn btn-lg btn-dark btn-block" role="button" aria-pressed="true">
-                Contact Us!
-              </a>
-            </div>
-          </div>
+        <div class="col-lg-3 col-md-6 insta">
+          <a href="" target="_blank">
+            <img
+              class=""
+              src="images/webmain_carouselp.jpg"
+              alt="Sample Product ads"
+            /></img>
+          </a>
         </div>
 
-        <div class="pricing-column col-lg-4">
-          <!--col-lg-4 col-md-6 make your view col within the screen just run and check it -->
-          <div class="card">
-            <div class="card-header">
-              <h3>Limited Design</h3>
-            </div>
-            <div class="card-body">
-              <img
-                class="product3"
-                src="images/PirateShirt.png"
-                alt="design3"
-              />
-              <h2 class="price-text">PHP 200.00</h2>
-              <p>Pirate Design</p>
-              <a href="mailto:ginobautista023@gmail.com" class="btn btn-lg btn-dark btn-block" role="button" aria-pressed="true">
-                Contact Us!
-              </a>
-            </div>
-          </div>
+        <div class="col-lg-3 col-md-6 insta">
+          <a href="" target="_blank">
+            <img
+              class=""
+              src="images/product_design.jpg"
+              alt="Illustrator"
+            /></img>
+          </a>
         </div>
+
+        <div class="col-lg-3 col-md-6 insta">
+          <a href="" target="_blank">
+            <img
+              class=""
+              src="images/isometric.jpg"
+              alt="Isometric Design"
+            /></img>
+          </a>
+        </div>
+<!--NExt-->
+         <div class="col-lg-3 col-md-6 insta">
+          <a href="" target="_blank">
+            <img
+              class=""
+              src="images/character.jpg"
+              alt="Sample Product ads"
+            /></img>
+          </a>
+        </div>
+
+        <div class="col-lg-3 col-md-6 insta">
+          <a href="" target="_blank">
+            <img
+              class=""
+              src="images/summerslogan.jpg"
+              alt="Sample Product ads"
+            /></img>
+          </a>
+        </div>
+
+        <div class="col-lg-3 col-md-6 insta">
+          <a href="" target="_blank">
+            <img
+              class=""
+              src="images/graphicchar.jpg"
+              alt="Illustrator"
+            /></img>
+          </a>
+        </div>
+
+        <div class="col-lg-3 col-md-6 insta">
+          <a href="" target="_blank">
+            <img
+              class=""
+              src="images/watermelonpopsic.jpg"
+              alt="Isometric Design"
+            /></img>
+          </a>
+        </div>        
       </div>
     </section>
 
@@ -335,8 +316,7 @@
     <section class="colored-section" id="cta">
       <img class="image-iso" src="images/isome.png" alt="" />
       <h3 class="message-heading">
-        This Website, there's a lot of things i need to put here, but focus in
-        simplicity.
+        Let's Talk
       </h3>
       <!--<button type="button" class="btn btn-dark btn-lg download-button"><i class="fab fa-apple"></i> Download</button>
     <button type="button" class="btn btn-light btn-lg download-button"><i class="fab fa-google-play"></i>
@@ -346,7 +326,8 @@
     <!-- Footer -->
 
     <footer class="white-section" id="footer">
-      <a
+      <div class="footer-icon">
+        <a
         class="fab fa fa-behance fa-lg footer-icon"
         title="Behance"
         href="https://www.behance.net/ginobautista29"
@@ -369,7 +350,9 @@
         href="https://www.linkedin.com/in/gino-bautista-710234134"
         target="_blank"
       ></a>
-      <p class="footer-p">© Copyright 2021 Gino</p>
+      <p class="footer-p">CRTVEUNIQUE ©2024 </p>
+      </div>
     </footer>
+    <script src="jss/zoom.js"></script>
   </body>
 </html>

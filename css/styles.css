@@ -55,7 +55,7 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: center; */
-  background-color: #fdc500;
+  background-color: #082032;
   color: #fff;
 }
 
@@ -177,6 +177,7 @@ body{
 
 .testimonial-image {
   width: 50%;
+  border-radius: 8%;
 }
 
 .testimonial-text {

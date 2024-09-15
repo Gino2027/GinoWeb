@@ -354,6 +354,10 @@ rotate to 0 and the div id title-align will change to center how to check viewpo
     text-align: center;
   }
 
+  .profile-me {
+    width: 70%;
+  }
+
   .footer-icon {
     font-size: 2rem;
   }

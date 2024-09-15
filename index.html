@@ -65,7 +65,7 @@
 
         <nav class="navbar navbar-expand-lg">
           <a class="navbar-brand" href=""
-            ><img class="profile-me" src="images/mechar.jpg" /> </a
+            ><img class="profile-me" src="images/ourlogov1.png" onContextMenu="return false;" /> </a
           >
           <button
             class="navbar-toggler navbar-dark"
@@ -99,7 +99,7 @@
         <!--Col-lg: Desktop view / Col-md: Tablet view / Col-sm: Phone view-->
         <div class="row">
           <div class="col-md-6">
-            <h1 class="large-heading">Welcome! CRTVEUNIQUE</h1>
+            <h1 class="large-heading">Welcome!</h1>
             <h2 class="info_title">Creating unique illustrator art based on the ideas that came from my imagination.</h2>
             <!--<button type="button" class="btn btn-dark btn-lg download-button"><i class="fab fa-apple"></i>
             Download</button>
@@ -154,7 +154,7 @@
     <!-- Testimonials -->
 
     <section class="colored-section" id="shop">
-      <h2 class="section-heading-shop">Shop Now!</h2>
+      <h2 class="section-heading-shop">Shop Now!at Prenta.ph</h2>
       <!-- Start Carousel -->
       <div
         id="testimonial-carousel"
@@ -170,6 +170,10 @@
               alt=""
             />
           </div>
+        </div>
+
+        <div class="gif_text">
+          <h3></h3>
         </div>
       </div>
       <!-- card-deck to column this 3 card class inside the div class="card-deck" -->
@@ -187,8 +191,6 @@
                 src="images/shop2.png"
                 alt="design2"
               />
-              <h2 class="price-text">PHP 200.00</h2>
-              <p>Limited Popsicle Design</p>
               <a href="https://prenta.ph/products/my-comfort-food-ramen" class="btn btn-lg btn-dark btn-block" role="button" aria-pressed="true" target="_blank">
                 Shop Now!
               </a>
@@ -208,14 +210,32 @@
                 src="images/shop3.png"
                 alt="design2"
               />
-              <h2 class="price-text">PHP 200.00</h2>
-              <p>Limited Lightsaber Design</p>
               <a href="https://prenta.ph/products/my-comfort-food-ramen-blue" class="btn btn-lg btn-dark btn-block" role="button" aria-pressed="true" target="_blank">
                 Shop Now!
               </a>
             </div>
           </div>
         </div>
+<!-- 
+        <div class="pricing-column col-lg-4">
+          <div class="card">
+            <div class="card-header">
+              <h3>Limited Design</h3>
+            </div>
+            <div class="card-body">
+              <img
+                class="product3"
+                src="images/PirateShirt.png"
+                alt="design3"
+              />
+              <h2 class="price-text">PHP 200.00</h2>
+              <p>Pirate Design</p>
+              <a href="mailto:ginobautista023@gmail.com" class="btn btn-lg btn-dark btn-block" role="button" aria-pressed="true">
+                Contact Us!
+              </a>
+            </div>
+          </div>
+        </div> -->
       </div>
     </section>
 
@@ -329,7 +349,7 @@
       <div class="footer-icon">
         <a
         class="fab fa fa-behance fa-lg footer-icon"
-        title="Behance"
+        title="DeviantArt"
         href="https://www.behance.net/ginobautista29"
         target="_blank"
       ></a>
@@ -353,6 +373,13 @@
       <p class="footer-p">CRTVEUNIQUE ©2024 </p>
       </div>
     </footer>
-    <script src="jss/zoom.js"></script>
+    <script src="jss/rejdownload.js">
+$(document).ready(function()
+{
+    $('img').bind('contextmenu', function(e){
+        return false;
+    }); 
+});
+    </script>
   </body>
 </html>
